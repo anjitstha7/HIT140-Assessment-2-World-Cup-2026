@@ -4,7 +4,7 @@ from scipy import stats
 import matplotlib.pyplot as plt
 
 # Load the data
-data = pd.read_csv("data/Divya_Team_Discipline_FBref_Final_Population.csv")
+data = pd.read_csv("datasets/Divya_Team_Discipline_FBref_Final_Population.csv")
 
 # Clean the data
 data = data.drop_duplicates("Team")
@@ -182,6 +182,6 @@ sample = pd.concat(
 )
 
 sample.to_csv(
-    "data/Divya_Team_Discipline_Final_Sample.csv",
+    "datasets/Divya_Team_Discipline_Final_Sample.csv",
     index=False
 )
